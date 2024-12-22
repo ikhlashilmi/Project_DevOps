@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="icon" href="icon/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="review">
+    <header class="header">
+        <div class="navbar">
+            <div class="nav_rights_side">
+                <div class="logo">
+                    <a class="hover-underline-animation" href="#">
+                        <img src="icon/Logo.png" alt="AHP">
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a class="hover-underline-animation" href="Home.html">Home</a>
+                    <a class="hover-underline-animation" href="Home.html#all-books">Product</a>
+                    <a class="hover-underline-animation" href="AboutUs.html">About Us</a>
+                    <div class="hover-underline-animation other-container">
+                        <div class="cart-link">Others</div>
+                        <div class="dropdown-profile">
+                            <a href="Cart.html">Cart</a>
+                            <a href="Review.html">Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_left_side">
+                <div class="search-bar">
+                    <input class="input__search" type="text" placeholder="Search...">
+                    <button class="btn__search">Search</button>
+                    <div class="search-results" id="search-results"></div> <!-- Hasil pencarian -->  
+                </div>
+                <div class="user-profile">
+                    <a href="#" class="profile-link">
+                        <img class="img__profile" src="icon/profile (black).png" alt="">
+                    </a>
+                    <div class="dropdown-profile">
+                        <a href="Profile.html">Profile</a>
+                        <a href="Login.html" id="login-btn">Login</a>
+                        <a href="#" id="logout-button">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="testimony-page">
+        <section class="submit_review">
+            <h1>Submit Review</h1>
+            <div class="user__info" id="user-info">
+                <!-- User Info added from JS -->
+            </div>
+            <form>
+                <label for="rating">Rating: <span style="color: red; opacity: 0.5;">(must be filled)</span></label>
+                <select id="rating" name="rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                
+                <label for="review">Headline: <span style="color: red;opacity: 0.5;">(must be filled)</span></label>
+                <textarea id="review" name="review"></textarea>
+
+                <label for="review_description">Book Review:</label>
+                <textarea id="review_description" name="review_description"></textarea>
+                
+                <div class="form_actions">
+                    <button type="submit" id="submit-button">Submit</button>
+                    <button type="button" id="cancel-button">Cancel</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+     <!-- Subscribe Section -->
+     <footer class="footer__section">
+        <div class="links">
+            <div class="side__footer">
+                <div class="logo__footer">
+                    <a class="hover-underline-animation" href="#">
+                        <img src="icon/Logo.png" alt="AHP">
+                    </a>
+                </div>
+                <p>Velit do non amet aliqua duis laborum veniam consectetur laboris non deserunt duis esse cupidatat.
+                </p>
+                <div class="sosial_media_section">
+                    <a href="#" class="social__item">
+                        <img class="img_icon_social" src="../src/icon/social_media/discord-svgrepo-com.svg" alt="">
+                    </a>
+                    <a href="#" class="social__item">
+                        <img class="img_icon_social" src="../src/icon/social_media/instagram-svgrepo-com.svg" alt="">
+                    </a>
+                    <a href="#" class="social__item">
+                        <img class="img_icon_social" src="../src/icon/social_media/twitter-svgrepo-com.svg" alt="">
+                    </a>
+                    <a href="#" class="social__item">
+                        <img class="img_icon_social" src="../src/icon/social_media/youtube-168-svgrepo-com.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__links">
+                <div class="footer__links_item">
+                    <h3>Quick Links</h3>
+                    <a class="footer_links_nav hover-underline-animation" href="Home.html">Home</a>
+                    <a class="footer_links_nav hover-underline-animation" href="Home.html#all-books">Products</a>
+                    <a class="footer_links_nav hover-underline-animation" href="AboutUs.html">About</a>
+
+                </div>
+
+                <div class="footer__links_item">
+                    <h3>Policy</h3>
+                    <a class="footer_links_nav hover-underline-animation" href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="subscribe-form">
+
+            <div class="text_head_form">
+                <div class="title__text">
+                    Don’t miss newest book
+                </div>
+                <div class="desc__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
+                    dummy. typesetting industry Lorem Ipsum.
+                </div>
+            </div>
+
+            <form class="form_section_footer" action="#">
+                <input type="email" placeholder="Type your email address">
+                <button>Subscribe</button>
+            </form>
+        </div>
+    </footer>
+    <!-- Footer Component -->
+    <div style="background-color: black; color: white;  display: flex; justify-content: center; align-items: center;">
+        <p style="margin-top: 30px; margin-bottom: 30px; font-weight: 500;">© 2024. All Rights Reserved - Kelompok 2</p>
+    </div>
+
+
+    <script src="tes.js"></script>
+</body>
+</html>
