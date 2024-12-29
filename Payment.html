@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="icon" href="icon/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body data-page="payment">
+    <!-- header -->
+    <header class="header">
+        <div class="navbar">
+            <div class="nav_rights_side">
+                <div class="logo">
+                    <a class="hover-underline-animation" href="#">
+                        <img src="icon/Logo.png" alt="AHP">
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a class="hover-underline-animation" href="Home.html">Home</a>
+                    <a class="hover-underline-animation" href="Home.html#all-books">Product</a>
+                    <a class="hover-underline-animation" href="AboutUs.html">About Us</a>
+                    <div class="hover-underline-animation other-container">
+                        <div class="cart-link">Others</div>
+                        <div class="dropdown-profile">
+                            <a href="Cart.html">Cart</a>
+                            <a href="Review.html">Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_left_side">
+                <div class="user-profile">
+                    <a href="#" class="profile-link">
+                        <img class="img__profile" src="icon/profile (black).png" alt="">
+                    </a>
+                    <div class="dropdown-profile">
+                        <a href="Profile.html">Profile</a>
+                        <a href="Login.html" id="login-btn">Login</a>
+                        <a href="#" id="logout-button">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="payment__container">
+        <div class="left__section">
+            <section id="shipper-information">
+                <h2>Shipper Information</h2>
+                <form id="shipper-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </form>
+            </section>
+            <section id="book-information">
+                <h2>Book Information</h2>
+                <div id="book-detail">
+                    <!-- Book details will be displayed here -->
+                </div>
+            </section>
+        </div>
+        <div class="right__section">
+            <section id="order-summary">
+                <h2>Order Summary</h2>
+                <label for="shipping-method">Shipping Method:</label>
+                <select id="shipping-method" name="shipping-method">
+                    <option value="standard">Standard Shipping</option>
+                    <option value="express">Express Shipping</option>
+                </select>
+                <div id="total-price">
+                    <!-- Total price will be displayed here -->
+                </div>
+            </section>
+            <button id="cancel-button">Cancel Purchase</button>
+            <button id="pay-button">Pay Now</button>
+        </div>
+    </main>
+
+    <div style="background-color: black; color: white;  display: flex; justify-content: center; align-items: center;">
+        <p style="margin-top: 30px; margin-bottom: 30px; font-weight: 500;">© 2024. All Rights Reserved - Kelompok 2</p>
+    </div>
+
+
+    <script src="tes.js"></script>
+</body>
+</html>

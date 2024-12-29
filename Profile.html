@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="icon" href="icon/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .profile-info {
+            text-align: left;
+            margin-right: 20px;
+        }
+
+        .profile-image {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body data-page="profile">
+    <header class="header">
+        <div class="navbar">
+            <div class="nav_rights_side">
+                <div class="logo">
+                    <a class="hover-underline-animation" href="#">
+                        <img src="icon/Logo.png" alt="AHP">
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a class="hover-underline-animation" href="Home.html">Home</a>
+                    <a class="hover-underline-animation" href="Home.html#all-books">Product</a>
+                    <a class="hover-underline-animation" href="AboutUs.html">About Us</a>
+                    <div class="hover-underline-animation other-container">
+                        <div class="cart-link">Others</div>
+                        <div class="dropdown-profile">
+                            <a href="Cart.html">Cart</a>
+                            <a href="Review.html">Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_left_side">
+                <div class="search-bar">
+                    <input class="input__search" type="text" placeholder="Search...">
+                    <button class="btn__search">Search</button>
+                    <div class="search-results" id="search-results"></div> <!-- Hasil pencarian -->
+                </div>
+                <div class="user-profile">
+                    <a  href="#" class="profile-link">
+                        <img  class="img__profile" src="icon/profile (black).png" alt="">
+                    </a>
+                    <div class="dropdown-profile">
+                        <a href="Profile.html">Profile</a>
+                        <a href="Login.html" id="login-btn">Login</a>
+                        <a href="#" id="logout-button">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main style="height: 100vh;" class="profile-container" id="profile-container">
+        <!-- Profile content display here -->
+    </main>
+
+    <footer>
+        <div
+            style="background-color: black; color: white;  display: flex; justify-content: center; align-items: center;">
+            <p style="margin-top: 30px; margin-bottom: 30px; font-weight: 500;">© 2024. All Rights Reserved - Kelompok 2
+            </p>
+        </div>
+    </footer>
+    <script src="tes.js"></script>
+</body>
+
+</html>

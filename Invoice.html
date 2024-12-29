@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="icon" href="icon/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="invoice">
+    <header class="header">
+        <div class="navbar">
+            <div class="nav_rights_side">
+                <div class="logo">
+                    <a class="hover-underline-animation" href="#">
+                        <img src="icon/Logo.png" alt="AHP">
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a class="hover-underline-animation" href="Home.html">Home</a>
+                    <a class="hover-underline-animation" href="Home.html#all-books">Product</a>
+                    <a class="hover-underline-animation" href="AboutUs.html">About Us</a>
+                    <div class="hover-underline-animation other-container">
+                        <div class="cart-link">Others</div>
+                        <div class="dropdown-profile">
+                            <a href="Cart.html">Cart</a>
+                            <a href="Review.html">Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_left_side">
+                <div class="user-profile">
+                    <a href="#" class="profile-link">
+                        <img class="img__profile" src="icon/profile (black).png" alt="">
+                    </a>
+                    <div class="dropdown-profile">
+                        <a href="Profile.html">Profile</a>
+                        <a href="Login.html" id="login-btn">Login</a>
+                        <a href="#" id="logout-button">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="invoice__container">
+        <div class="invoice__content">
+        <h1>Order History</h1>
+        <div class="upper__section" id="invoice-details">
+            <div class ="invoice__number">
+                <h2>invoice No:</h2>
+                <p id="invoice-number"></p>
+            </div>
+            <div class="invoice__date">
+                <h2>Date:</h2>
+                <p id="invoice-date"></p>
+            </div>
+            <div class="invoice__name">
+                <h2>Name:</h2>
+                <p id="invoice-name"></p>
+            </div>
+            <div class="invoice__phone">
+                <h2>Phone:</h2>
+                <p id="invoice-phone"></p>
+            </div>
+            <div class="invoice__address">
+                <h2>Address:</h2>
+                <p id="invoice-address"></p>
+            </div>
+        </div>
+        <div class="book__section" id="invoice-items">
+            <!--  -->
+        </div>
+        <div class="footer">
+            <div class="footer__item">
+                <h3>Shipping Method:</h3>
+                <p id="shipping-method"></p>
+            </div>
+            <div class="footer__item">
+                <h3>Shipping Cost:</h3>
+                <p id="shipping-cost"></p>
+            </div>
+            <div class="footer__item">
+                <h3>Total Price:</h3>
+                <p id="total-price"></p>
+            </div>
+        </div>
+        <div> 
+            <button onclick="printInvoice()">Download</button>
+            <button id="ok-button">Okay</button>
+        </div>
+        </div>
+    </main>
+
+     <!-- Subscribe Section -->
+     
+    <footer style="background-color: black; color: white;  display: flex; justify-content: center; align-items: center;">
+        <p style="margin-top: 30px; margin-bottom: 30px; font-weight: 500;">© 2024. All Rights Reserved - Kelompok 3</p>
+    </footer>
+
+
+    <script src="tes.js"></script>
+</body>
+</html>
